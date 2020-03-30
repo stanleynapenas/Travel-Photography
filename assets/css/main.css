@@ -14,6 +14,10 @@ body {
   background-color: #040a0f;
 }
 
+header {
+  position: relative;
+}
+
 h1 {
   font-family: "Jomolhari", serif;
   font-size: 60px;
@@ -21,8 +25,8 @@ h1 {
 }
 
 h2 {
-    font-family: "Rajdhani", sans-serif;
-    letter-spacing: 2px;
+  font-family: "Rajdhani", sans-serif;
+  letter-spacing: 2px;
   font-size: 24px;
   color: #bab9b9;
   letter-spacing: 2px;
@@ -30,39 +34,48 @@ h2 {
 }
 
 h2 {
-    font-family: "Rajdhani", sans-serif;
-    letter-spacing: 2px;
+  font-family: "Rajdhani", sans-serif;
+  letter-spacing: 2px;
   font-size: 24px;
   color: #bab9b9;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-.lighter{
-    color: #e0e0e0;
-}
-
 h3 {
-    font-family: "Jomolhari", serif;
+  font-family: "Jomolhari", serif;
   font-size: 24px;
   color: #fbfbfb;
 }
 
-
 h4 {
   font-family: "Rajdhani", sans-serif;
-    font-size: 18px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #bab9b9;
 }
 
-.bolder{
-    font-weight: 600;
-    color: #fbfbfb;
-    letter-spacing: normal;
+h5 {
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #fbfbfb;
 }
 
+p {
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+}
+
+a {
+  cursor: pointer;
+  transition: ease-in-out 500ms;
+}
+
+a:hover {
+  transform: scale(1.05);
+}
 
 button {
   padding: 10px 20px;
@@ -118,15 +131,21 @@ button:hover {
   float: right;
 }
 
+.lowercase {
+  text-transform: none;
+}
+
 /* End Nav Bar */
 
 /* ---------------- */
 
 /* Micro Class */
 
+/* Hero section */
 .hero-section {
   height: 100vh;
-  background-image: url(../img/hero-travel.jpg);
+  background-image: linear-gradient(180deg, #040a0f00, #040a0f),
+    url(../img/hero-travel.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -139,17 +158,140 @@ button:hover {
   text-align: center;
 }
 
-.including-wrapper{
-    margin-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+/* Dark box */
+
+.including-wrapper {
+  margin-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .including {
-    display: inline-block;
+  display: inline-block;
   width: 24%;
-    padding: 20px;
-height: 100%;
-
-  background-color: red;
+  padding: 20px;
+  background-color: rgba(22, 22, 22, 0.4);
+  border-radius: 3px;
 }
+
+.bolder {
+  font-weight: 600;
+  color: #fbfbfb;
+  letter-spacing: normal;
+}
+
+.lighter {
+  color: #e0e0e0;
+}
+
+.darker-box {
+  display: inline-block;
+  width: 24%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* End Dark box */
+
+/* Lower text div */
+.lower-div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+}
+
+.lower-textholder {
+  display: inline-block;
+  width: 24%;
+  padding: 30px;
+}
+
+.lower-wrapper {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #bab9b91e;
+}
+
+/* End hero section */
+
+/* skills section */
+
+.skills-section {
+  padding-top: 100px;
+
+  padding-bottom: 100px;
+  /*  PROVA!!!!! */
+
+  text-align: center;
+}
+
+.photo-div {
+  display: inline-block;
+  position: relative;
+  height: 350px;
+  width: 20%;
+  padding: 30px;
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  border-radius: 2px;
+}
+
+.aboslute-bottom-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+}
+
+/* Immagini background Skills */
+.architecture {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff00 10%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/architecture.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.landscape {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff00 10%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/landscape.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.astro {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff00 10%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/astro.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.people {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff00 10%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/people.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* End immagini background skills */
