@@ -1,0 +1,155 @@
+/* Macro class */
+
+* {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  color: #bab9b9;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #040a0f;
+}
+
+h1 {
+  font-family: "Jomolhari", serif;
+  font-size: 60px;
+  color: #fbfbfb;
+}
+
+h2 {
+    font-family: "Rajdhani", sans-serif;
+    letter-spacing: 2px;
+  font-size: 24px;
+  color: #bab9b9;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Rajdhani", sans-serif;
+    letter-spacing: 2px;
+  font-size: 24px;
+  color: #bab9b9;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.lighter{
+    color: #e0e0e0;
+}
+
+h3 {
+    font-family: "Jomolhari", serif;
+  font-size: 24px;
+  color: #fbfbfb;
+}
+
+
+h4 {
+  font-family: "Rajdhani", sans-serif;
+    font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #bab9b9;
+}
+
+.bolder{
+    font-weight: 600;
+    color: #fbfbfb;
+    letter-spacing: normal;
+}
+
+
+button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #f59950;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #fbfbfb;
+  border: transparent;
+  cursor: pointer;
+  transition: ease-in-out 310ms;
+}
+
+button:hover {
+  transform: scale(0.9);
+}
+
+/* --------------- */
+
+/* My components */
+.mycontain {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Nav Bar */
+
+.navbar {
+  margin-bottom: 50px;
+  border-bottom: 2px solid #bab9b91e;
+  border-radius: 1px;
+}
+
+.logo {
+  height: 100px;
+  padding: 10px;
+}
+
+.nav-link {
+  display: inline;
+  padding: 25px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #bab9b9;
+}
+
+.nav-link:hover {
+  color: #fbfbfb;
+}
+
+.floating {
+  float: right;
+}
+
+/* End Nav Bar */
+
+/* ---------------- */
+
+/* Micro Class */
+
+.hero-section {
+  height: 100vh;
+  background-image: url(../img/hero-travel.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.including-wrapper{
+    margin-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.including {
+    display: inline-block;
+  width: 24%;
+    padding: 20px;
+height: 100%;
+
+  background-color: red;
+}
